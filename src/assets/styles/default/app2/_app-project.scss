@@ -1,0 +1,46 @@
+.project-group {
+  margin: 0;
+  position: relative;
+}
+.project-search {
+  width: 100%;
+  padding: rem(5px) rem(15px);
+  height: rem(35px);
+  background: $light;
+  border-color: $light;
+  font-size: $font-size-base;
+
+  @include border-radius($border-radius-lg * 5);
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+
+  &:focus {
+    width: 100%;
+    border-color: $light;
+    outline: none;
+    @include box-shadow(none);
+  }
+  &-btn {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    border: none;
+    background: none;
+    padding-bottom: 5px;
+
+    @include border-radius(0 $border-radius-lg * 5 $border-radius-lg * 5 0);
+    @include display-flex();
+    @include flex-align(center);
+    @if $enable-rtl {
+      right: auto;
+      left: 0;
+    }
+
+    & > i[class*="ion-"] {
+      font-size: rem(22px);
+      display: block;
+    }
+  }
+}

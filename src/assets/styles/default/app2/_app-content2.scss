@@ -1,0 +1,57 @@
+.app-content {
+  margin-left: $app-sidebar-width;
+  padding: 20px 20px;
+  background: white;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+  }
+
+  & .app-content-container {
+    //  margin: (-$app-content-padding-y) (-$app-content-padding-x);
+    padding: $app-content-padding-y $app-content-padding-x;
+
+    @include media-breakpoint-down(md) {
+      margin: (-$app-content-padding-y-sm) (-$app-content-padding-x-sm);
+      padding: $app-content-padding-y-sm $app-content-padding-x-sm;
+    }
+  }
+  & .app-content-margin {
+    margin: (-$app-content-padding-y) (-$app-content-padding-x);
+
+    @include media-breakpoint-down(md) {
+      margin: (-$app-content-padding-y-sm) (-$app-content-padding-x-sm);
+    }
+  }
+  & .app-content-padding {
+    padding: $app-content-padding-y $app-content-padding-x;
+
+    @include media-breakpoint-down(md) {
+      padding: $app-content-padding-y-sm $app-content-padding-x-sm;
+    }
+  }
+
+  @if $enable-rtl {
+    margin-left: 0;
+    margin-right: $app-sidebar-width;
+  }
+  @include media-breakpoint-down(md) {
+    margin-left: 0;
+    padding: $app-content-padding-y-sm $app-content-padding-x-sm;
+
+    @if $enable-rtl {
+      margin-right: 0;
+    }
+  }
+}

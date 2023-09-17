@@ -1,0 +1,52 @@
+{
+  "_from": "jsme-editor",
+  "_id": "jsme-editor@2021.7.13",
+  "_inBundle": false,
+  "_integrity": "sha512-jiEY9tz/vZjlDMJPeSb05au37vuKRZZVk/mc3/p/Q9vbtNt4E+q5vEfKrvC1ILjPQ20p1rxEYXmhpk6IPG257w==",
+  "_location": "/jsme-editor",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "jsme-editor",
+    "name": "jsme-editor",
+    "escapedName": "jsme-editor",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jsme-editor/-/jsme-editor-2021.7.13.tgz",
+  "_shasum": "67e98c4f7aa69baa349b44bb04524330b4d88cba",
+  "_spec": "jsme-editor",
+  "_where": "C:\\vscode.workspace\\fe.eln",
+  "author": {
+    "name": "Peter Ertl, Bruno Bienfait"
+  },
+  "bugs": {
+    "url": "https://github.com/jsme-editor/jsme-editor.github.io/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "JSME molecule editor",
+  "homepage": "https://jsme-editor.github.io/",
+  "keywords": [
+    "molecule",
+    "reaction",
+    "editor",
+    "JavaScript",
+    "GWT"
+  ],
+  "license": "BSD-3-Clause",
+  "main": "jsme.nocache.js",
+  "name": "jsme-editor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsme-editor/jsme-editor.github.io/tree/main/dist/jsme"
+  },
+  "scripts": {},
+  "version": "2021.7.13"
+}
