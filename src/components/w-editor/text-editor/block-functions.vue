@@ -16,6 +16,9 @@
 </template>
 
 <script>
+/* 
+블록의 '...' 메뉴 - 삭제, 복제, 코멘트
+*/
 import vClickOutside from "click-outside-vue3";
 export default {
   name: "TagMenu",

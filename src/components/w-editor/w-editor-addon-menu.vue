@@ -23,6 +23,9 @@
 </template>
 
 <script>
+/* 
+'/' 메뉴
+*/
 export default {
   name: "TagMenu",
   components: {},

@@ -1,3 +1,9 @@
+# fe-eln-editor
+
+## overview
+- 연구노트 프로젝트의 클라이언트를 서버없이 실행되도록 수정
+- 에디터 부분만 작동함
+
 # eln
 
 NODE version is v14.17.0

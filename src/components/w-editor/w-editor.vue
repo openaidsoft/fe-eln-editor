@@ -19,6 +19,7 @@
               <i class="fas fa-arrows-alt icon handle" title="드래그로 이동할 수 있습니다." :id="element.block.positionId"> <input type="hidden" value="{{ element.id }}" /></i>
               <i class="fas fa-ellipsis-h icon" title="삭제 및 추가기능" @click="showOption(element.block.positionId, element.id)"></i>
             </div>
+            <!-- '/' 메뉴 -->
             <wOptEditor
               ref="editortypeBlock"
               v-if="element.block.editTag"
@@ -29,6 +30,7 @@
               :imgUrl="element.image.url"
               @saveImageHandler="saveImageHandler"
             ></wOptEditor>
+            <!-- 블록의 '...' 메뉴 - 삭제, 복제, 코멘트 -->
             <EditorOption
               ref="optionlist"
               :id="element.id"
@@ -38,6 +40,7 @@
               v-if="positionId == element.block.positionId"
             ></EditorOption>
             <Emoji :showEmoji="showEmoji" v-if="currentId == element.id" v-click-outside="emojiClose" @selectedEmoji="inputEmoji" :id="element.id"></Emoji>
+            <!-- 블록 -->
             <eitableBlock
               v-if="!editor_type_opt.includes(element.block.editTag)"
               :id="element.id"

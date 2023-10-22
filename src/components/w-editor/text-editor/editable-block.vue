@@ -19,6 +19,9 @@
 </template>
 
 <script>
+/* 
+블록
+*/
 import { watch, ref } from "vue";
 import Content from "@/Content.js";
 import TagMenu from "@/components/w-editor/w-editor-addon-menu.vue";
