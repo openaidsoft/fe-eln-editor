@@ -13,6 +13,9 @@
 </template>
 
 <script>
+/* 
+에디터 영역을 header, body, comment로 구분한 컨테이너
+*/
 export default {
   name: "wEditorContainer",
   props: {

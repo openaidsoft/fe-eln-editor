@@ -83,19 +83,31 @@
 </template>
 
 <script>
+/* 
+노트 내에서 블록을 담고 있는 에디터
+*/
 import { watch, provide, ref, reactive, onMounted } from "vue";
 import { useRoute } from "vue-router";
+// 에디터 영역을 header, body, comment로 구분한 컨테이너
 import wEditorContainer from "@/components/w-editor/w-editor-container.vue";
 import Utils from "@/components/cmm/Utils.js";
+// 블록의 기본값(basic_block)과 블록 타입의 구분값(VariableContent)
 import VariableContent, { basic_block } from "@/Content.js";
+// 블록 - '/' 메뉴와 '...' 메뉴 포함
 import eitableBlock from "@/components/w-editor/text-editor/editable-block.vue";
+// Jsme, JExcel, Formula, ImageUpload 블록 중 하나를 표현함
 import wOptEditor from "@/components/w-editor/w-editor-addon.vue";
 import draggable from "vuedraggable";
+// 블록 좌측의 '...' 메뉴 - 삭제, 복제, 코멘트
 import EditorOption from "@/components/w-editor/text-editor/block-functions.vue";
+// 코멘트 - 입력부 포함
 import Comment from "@/components/comment/commentView.vue";
+// 코멘트 리스트 - 입력부 포함
 import EachComment from "@/components/comment/eachCommentView.vue";
+// 태그 
 import WeditorTag from "@/components/w-editor/w-editor-tag.vue";
 import Emoji from "@/components/cmm/Emoji.vue";
+// 노트 crud 
 import { getNoteService, getNoteCmmtService, saveBlockService } from "@/components/w-editor/w-editor-service.js";
 import { blockStore } from "@/store/blockStore.js";
 

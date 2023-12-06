@@ -24,7 +24,9 @@
 */
 import { watch, ref } from "vue";
 import Content from "@/Content.js";
+// '/' 메뉴
 import TagMenu from "@/components/w-editor/w-editor-addon-menu.vue";
+// 블록 좌측의 '...' 메뉴 - 삭제, 복제, 코멘트
 import EditorOption from "@/components/w-editor/text-editor/block-functions.vue";
 
 function getCur(el) {

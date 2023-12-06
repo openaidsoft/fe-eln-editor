@@ -35,6 +35,9 @@
 </template>
 
 <script>
+/* 
+노트의 우측 상단에 '...'버튼으로 표시된 옵션 메뉴
+*/
 //TODO: option 상태는 cookie에 저장하여 활용한다.
 export default {
   name: "Layout",

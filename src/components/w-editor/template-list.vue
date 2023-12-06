@@ -41,6 +41,9 @@
 </template>
 
 <script>
+/* 
+노트 옵션(노트 우측 상단의 '...'버튼을 눌렀을 때 나오는 메뉴)에서 '템플릿'을 선택했을 때 표시되는 레이어 팝업
+*/
 import Modal from "@/components/cmm/Modal.vue";
 import { VueperSlides, VueperSlide } from "vueperslides";
 import "vueperslides/dist/vueperslides.css";

@@ -9,9 +9,12 @@
 <script>
 import { watch, ref } from "vue";
 import { useRoute } from "vue-router";
+// 노트의 우측 상단에 '...'버튼으로 표시된 옵션 메뉴
 import WEditorOption from "@/components/w-editor/note-option.vue";
+// 노트 옵션(노트 우측 상단의 '...'버튼을 눌렀을 때 나오는 메뉴)에서 '템플릿'을 선택했을 때 표시되는 레이어 팝업
 import TemplateLayer from "@/components/w-editor/template-list.vue";
 import ScreenSizeLayout from "@/components/cmm/screen-size-layout.vue";
+// 노트 내에서 블록을 담고 있는 에디터
 import WEditor from "@/components/w-editor/w-editor.vue";
 
 export default {

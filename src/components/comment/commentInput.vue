@@ -24,6 +24,9 @@
 </template>
 
 <script>
+/* 
+코멘트 입력부
+*/
 import vClickOutside from "click-outside-vue3";
 
 export default {

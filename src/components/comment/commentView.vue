@@ -18,6 +18,7 @@
 </template>
 
 <script>
+// 코멘트 입력부
 import CommentInput from "@/components/comment/commentInput.vue";
 import Utils from "@/components/cmm/Utils.js";
 import VariableContent from "@/Content.js";
